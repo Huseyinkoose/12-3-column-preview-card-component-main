@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | 3-column preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      font-family: "Lexend Deca", sans-serif;
+      box-sizing: border-box;
+    }
+    
+    
+    .container{
+      
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+      width: 100%;
+      height: 100vh;
+      
+    }
+
+    .anabox{
+      display: flex;
+      
+      width: 60%;
+      height: 526px;
+      border-radius: 10px;
+    }
+    .box{
+      width: 33.3%;
+      padding:50px 2px 40px 50px;
+      color: white;
+      
+    }
+
+    .box1{
+      background-color: #E28525;
+      border-radius:10px 0 0 10px;
+    }
+
+    .box2{
+      background-color: #016972;
+    }
+
+    .box3{
+      background-color: #00403F;
+      border-radius:0 10px 10px 0px;
+    }
+
+    h1{
+      font-family: "Big Shoulders Display", sans-serif;
+      margin: 30px 0;
+    }
+
+    p{
+      line-height: 30px;
+      width: 79%;
+      font-weight: 400;
+    }
+    a{
+      display: block;
+      background-color:white;
+      padding: 15px 0;
+      text-decoration: none;
+      width: 55%;
+      text-align: center;
+      border-radius: 30px;
+      margin:95px 0 0 0;
+    }
+
+    a:hover{
+      border: 1px solid white;
+
+    }
+    
+    .a1{
+      color: #E28525;
+    }
+    .a1:hover{
+      background-color: #E28525 ;
+      color: white;
+    }
+    
+    .a2{
+      color:#016972 ;
+    }
+
+    .a2:hover{
+      background-color: #016972 ;
+      color: white;
+    }
+    .a3{
+      color: #00403F;
+    }
+
+    .a3:hover{
+      background-color: #00403F ;
+      color: white;
+    }
+
+    @media screen and (max-width:400px) {
+     
+      
+      .container{
+        display: flex;
+        
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        padding: 0 20px;
+       
+      }
+      .anabox{
+        display: flex;
+        flex-direction:column ;
+        width: 100%;
+        height: 100%;
+        margin-top:50px;
+        margin-bottom: 50px;
+
+
+        
+      }
+      .box{
+        width: 100%;
+
+
+        
+     
+      color: white;
+      }
+
+      a{
+        margin:40px 0 0 0;
+      }
+      
+    }
+
+
+    
+    
+
+
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="anabox">
+      <div class="box box1">
+        <img src="images/icon-sedans.svg" alt="">
+        <h1>SEDANS</h1>
+        <p>Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city or on your next road trip.</p>
+        <a class="a1" href="#">Learn More</a>
+      </div>
+
+      <div class="box box2">
+        <img src="images//icon-suvs.svg" alt="">
+        <h1>SUVS</h1>
+        <p>Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation and off-road adventures.</p>
+        <a class="a2" href="#">Learn More</a>
+      </div>
+
+      <div class="box box3">
+        <img src="images/icon-luxury.svg" alt="">
+        <h1>LUXURY</h1>
+        <p>Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury rental and arrive in style.</p>
+        <a class="a3" href="#">Learn More</a>
+      </div>
+      
+    </div>
+  </div>
+  
+
+  
+  
+  
+</body>
+</html>
